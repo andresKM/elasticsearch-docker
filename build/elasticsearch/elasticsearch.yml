@@ -1,5 +1,6 @@
 cluster.name: "docker-cluster"
 network.host: 0.0.0.0
+network.tcp.block: true
 
 # minimum_master_nodes need to be explicitly set when bound on a public IP
 # set to 1 to allow single node clusters
@@ -16,5 +17,3 @@ index.number_of_shards: 1
 index.number_of_replicas: 0
 index.term_index_interval: 256
 index.term_index_divisor: 5
-network.host: 127.0.0.1
-network.tcp.block: true
