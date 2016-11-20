@@ -12,8 +12,7 @@ http.cors.allow-origin: "*"
 http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
 http.cors.allow-headers: "Access-Control-Allow-Headers, Content-Type, Content-Length, X-User, X-Auth-Token,X-Requested-With, Authorization"
 
-#http://blog.lavoie.sl/2012/09/configure-elasticsearch-on-a-single-host.html (for an old version)
-#index.number_of_shards: 1
-#index.number_of_replicas: 0
-#index.term_index_interval: 256
-#index.term_index_divisor: 5
+xpack.monitoring.enabled: false
+xpack.graph.enabled: false
+xpack.watcher.enabled: false
+xpack.reporting.enabled: false
