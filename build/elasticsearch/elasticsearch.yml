@@ -5,3 +5,16 @@ network.host: 0.0.0.0
 # set to 1 to allow single node clusters
 # Details: https://github.com/elastic/elasticsearch/pull/17288
 discovery.zen.minimum_master_nodes: 1
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+http.cors.allow-headers: "X-Requested-With, Content-Type, Content-Length, X-User"
+
+#http://blog.lavoie.sl/2012/09/configure-elasticsearch-on-a-single-host.html (for an old version)
+index.number_of_shards: 1
+index.number_of_replicas: 0
+index.term_index_interval: 256
+index.term_index_divisor: 5
+network.host: 127.0.0.1
+network.tcp.block: true
