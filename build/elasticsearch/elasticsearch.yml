@@ -16,4 +16,5 @@ xpack.security.enabled: true
 xpack.monitoring.enabled: false
 xpack.graph.enabled: false
 xpack.watcher.enabled: false
-xpack.reporting.enabled: false
+#xpack.reporting.enabled: false
+
