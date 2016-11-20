@@ -1,9 +1,9 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch-alpine-base:latest
 MAINTAINER Elastic Docker Team <docker@elastic.co>
 
-ELASTIC_VERSION=5.0.1
+ARG ELASTIC_VERSION=5.0.1
 ARG ES_JAVA_OPTS
-ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch
+ARG ES_DOWNLOAD_URL=https://artifacts.elastic.co/downloads/elasticsearch
 #ES_JAVA_OPTS:=ES_JAVA_OPTS="-Des.plugins.staging=${STAGING_BUILD_NUM}
 
 
