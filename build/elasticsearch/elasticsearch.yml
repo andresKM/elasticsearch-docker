@@ -6,8 +6,6 @@ node.data: true
 transport.host: localhost
 transport.tcp.port: 9300
 http.port: 9200
-network.host: 0.0.0.0
-
 
 
 # minimum_master_nodes need to be explicitly set when bound on a public IP
